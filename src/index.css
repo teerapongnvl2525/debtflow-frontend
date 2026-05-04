@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-white;
+    font-family: 'Sarabun', system-ui, sans-serif;
+  }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded; }
+}
+
+@layer components {
+  .card { @apply bg-surface border border-border rounded-xl; }
+  .btn-primary { @apply bg-debt text-white font-bold rounded-lg px-4 py-2 text-sm hover:opacity-90 transition-opacity; }
+  .btn-secondary { @apply bg-transparent border border-border text-gray-300 rounded-lg px-4 py-2 text-sm hover:bg-surface2 transition-colors; }
+  .input { @apply w-full bg-surface2 border border-border rounded-lg px-3 py-2 text-white text-sm outline-none focus:border-invest transition-colors; }
+  .select { @apply w-full bg-surface2 border border-border rounded-lg px-3 py-2 text-white text-sm outline-none focus:border-invest; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+}
